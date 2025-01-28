@@ -25,7 +25,7 @@ if google_api_key:
     ])
     
     # Pass the API key to the GoogleGenerativeAI instance
-    llm = GoogleGenerativeAI(model="gemini-1.5-pro-latest", temperature=temperature, google_api_key=google_api_key)
+    llm = GoogleGenerativeAI(model="gemini-1.5-pro-latest", temperature=temperature, google_api_key=google_api_key ,google_api_key = google_api_key)
     parser = StrOutputParser()
     chain = prompt_template | llm | parser
     
